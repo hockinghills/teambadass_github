@@ -1,0 +1,135 @@
+{
+  "version": "1.1.0",
+  "last_updated": "2025-04-28",
+  "project_info": {
+    "name": "Propane Furnace Docusaurus Implementation",
+    "phase": "Implementation & Integration",
+    "completion": "60%",
+    "current_focus": [
+      "Integration of control components",
+      "PID configuration",
+      "Physical mounting"
+    ]
+  },
+  "documentation_site": {
+    "path_information": "[ACTUAL_REPOSITORY_PATH]/docs-site",
+    "deployment_history": [
+      "Previously attempted Vercel deployment with middleware",
+      "Currently exploring Vercel for enhanced documentation UI"
+    ],
+    "goals": [
+      "Searchable component database", 
+      "Web-based documentation", 
+      "TeamBadass methodology integration"
+    ],
+    "tools_implemented": [
+      "Node.js", 
+      "Docusaurus", 
+      "React components for equipment database"
+    ],
+    "key_accomplishments": [
+      "Created searchable equipment database with filtering and sorting",
+      "Built React components for equipment display",
+      "Integrated TeamBadass methodology into documentation structure",
+      "Implemented component detail views with specifications tables",
+      "Created deployment configuration files",
+      "Documented complete equipment inventory with detailed specifications",
+      "Established integration details between system components",
+      "Set up physical connections between controller, actuator, and valve",
+      "Configured PID controller for 4-20mA output to control actuator"
+    ]
+  },
+  "mission_control_system": {
+    "phase": "Design & Planning",
+    "goals": [
+      "Create interactive mission control dashboard UI",
+      "Implement real-time system monitoring with sensor integration",
+      "Add interactive system flow diagrams with status indicators",
+      "Build alert system with mobile notifications",
+      "Develop emergency response protocols for critical failures",
+      "Integrate hardware sensors with Raspberry Pi hub"
+    ],
+    "approach": "Incremental implementation starting with core functionality",
+    "core_concepts": {
+      "dashboard_approach": {
+        "description": "Transform the landing page into a dashboard showing key system metrics",
+        "features": [
+          "Real-time temperature monitoring",
+          "Gas and electric usage tracking",
+          "System efficiency metrics",
+          "Maintenance scheduling and alerts",
+          "Failure state visualization"
+        ]
+      },
+      "system_flow_diagrams": {
+        "description": "Interactive diagrams showing how components connect and operate",
+        "features": [
+          "Animated flows for different operational states",
+          "Color-coded components based on status and temperature",
+          "Click navigation to component documentation",
+          "Visual indicators for maintenance needs",
+          "Failure state visualization"
+        ]
+      },
+      "alert_system": {
+        "description": "Multi-level notification system for different states",
+        "features": [
+          "Mobile push notifications for status changes",
+          "Escalating alerts based on severity",
+          "Emergency responder contact for critical failures",
+          "Remote shutdown capabilities",
+          "Comprehensive logging of all alerts and responses"
+        ]
+      },
+      "hardware_integration": {
+        "description": "Physical sensor network feeding data to the system",
+        "components": [
+          "Temperature sensors for various system parts",
+          "Gas flow sensors",
+          "Oxygen/air mixture sensors",
+          "Pressure monitors",
+          "Raspberry Pi 4 as central hub"
+        ]
+      }
+    },
+    "testing_approach": {
+      "description": "Use existing smart home setup to prototype concepts",
+      "available_systems": [
+        "Sense monitor for power usage data",
+        "TV and light control systems",
+        "3D printer enclosure temperature monitoring",
+        "Raspberry Pi 4 for integration"
+      ]
+    },
+    "key_accomplishments": [
+      "Developed comprehensive dashboard concept",
+      "Created system flow visualization approach",
+      "Established multi-level alert architecture",
+      "Designed hardware integration strategy using Raspberry Pi",
+      "Identified necessary sensors for system monitoring",
+      "Mapped out testing approach using existing smart home infrastructure"
+    ]
+  },
+  "next_steps": {
+    "name": "Enhanced Furnace Documentation with Vercel",
+    "goals": [
+      "Deploy Docusaurus to Vercel (no middleware initially)",
+      "Create more professional UI beyond basic documentation",
+      "Add interactive equipment visualizations",
+      "Implement robust search functionality",
+      "Enhance the design for better usability"
+    ],
+    "approach": "Incremental implementation starting with core functionality"
+  },
+  "lessons_learned": [
+    "Start with simpler implementations and build up",
+    "Double-check filenames before providing scripts",
+    "Remember and track tools already installed",
+    "Record communication patterns alongside technical progress",
+    "Claude should create completed code rather than asking human to write code",
+    "Maintain shared project history between conversations",
+    "Remember previous deployment attempts and configurations",
+    "Present multiple options (3 when possible) for human to choose from",
+    "Focus on capturing communication flow patterns between sessions"
+  ]
+}

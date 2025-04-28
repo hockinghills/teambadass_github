@@ -1,0 +1,13 @@
+{
+  "version": "1.1.0",
+  "last_updated": "2025-04-28",
+  "project_info": {
+    "name": "ADHD Case",
+    "status": "On Hold",
+    "core_components": [
+      "Case overview document",
+      "Resource compilation",
+      "Strategy development"
+    ]
+  }
+}

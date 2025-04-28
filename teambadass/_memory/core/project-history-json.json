@@ -1,0 +1,90 @@
+{
+  "version": "1.1.0",
+  "last_updated": "2025-04-28",
+  "completed_projects": [
+    {
+      "name": "Propane Furnace GitHub Documentation",
+      "key_outcomes": ["Repository structure", "Template creation", "Documentation framework"],
+      "lessons_learned": ["Start with clear system boundaries", "Templates improve consistency"]
+    }
+  ],
+  "current_projects": {
+    "furnace_documentation": {
+      "name": "Propane Furnace Docusaurus Implementation",
+      "phase": "Implementation & Integration",
+      "completion_percentage": 60,
+      "current_focus": [
+        "Integration of control components", 
+        "PID configuration", 
+        "Physical mounting"
+      ]
+    },
+    "memory_system": {
+      "name": "TeamBadass Memory System",
+      "phase": "Implementation",
+      "completion_percentage": 90,
+      "current_focus": [
+        "Testing the full workflow",
+        "Adding version information",
+        "Creating documentation for usage"
+      ]
+    },
+    "mission_control_dashboard": {
+      "name": "Furnace Mission Control System",
+      "phase": "Design & Planning",
+      "completion_percentage": 25,
+      "current_focus": [
+        "Core dashboard design",
+        "Sensor integration planning",
+        "Flow diagram conceptualization"
+      ]
+    }
+  },
+  "paused_projects": {
+    "adhd_case": {
+      "name": "ADHD Case",
+      "phase": "Resource compilation",
+      "completion_percentage": 15,
+      "pause_reason": "Higher priority on furnace project",
+      "core_components": [
+        "Case overview document",
+        "Resource compilation",
+        "Strategy development"
+      ]
+    }
+  },
+  "upcoming_project": {
+    "name": "Enhanced Furnace Documentation with Vercel",
+    "goals": [
+      "Deploy Docusaurus to Vercel (no middleware initially)",
+      "Create more professional UI beyond basic documentation",
+      "Add interactive equipment visualizations",
+      "Implement robust search functionality",
+      "Enhance the design for better usability"
+    ],
+    "approach": "Incremental implementation starting with core functionality",
+    "estimated_start": "After memory system testing completion"
+  },
+  "composite_lessons_learned": [
+    "Start with simpler implementations and build up",
+    "Double-check filenames before providing scripts",
+    "Remember and track tools already installed",
+    "Focus on capturing communication flow patterns between sessions",
+    "Claude should create completed code rather than asking human to write code",
+    "Maintain shared project history between conversations",
+    "Remember previous deployment attempts and configurations",
+    "Present multiple options (3 when possible) for human to choose from",
+    "Record communication patterns alongside technical progress",
+    "Start with clear system boundaries",
+    "Templates improve consistency",
+    "Incremental implementations reduce debugging time",
+    "Regular communication about status helps track progress",
+    "Break implementation into smaller, focused chunks",
+    "Provide only necessary context to avoid overwhelming Claude",
+    "Use screenshots of file timestamps to efficiently convey progression",
+    "Capture work in progress to avoid losing effort when Claude runs out of resources",
+    "Create checklists for remaining work to maintain continuity between sessions",
+    "Focus on completing one function at a time to avoid resource exhaustion",
+    "Use clear file naming for artifacts to maintain organization"
+  ]
+}
