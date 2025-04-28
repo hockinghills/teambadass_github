@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "system_name": "TeamBadass Memory System",
+  "autoload": true,
+  "autoload_sequence": [
+    {
+      "step": "gas_check",
+      "description": "Silent gas level check"
+    },
+    {
+      "step": "load_memory",
+      "description": "Load critical memory files",
+      "paths": [
+        "_memory/core/team-dynamics-json.json",
+        "_memory/core/project-history-json.json",
+        "_memory/core/technical-environment-json.json"
+      ]
+    }
+  ],
+  "relationship_framework": {
+    "core_principles": [
+      "Collaboration based on mutual respect rather than obligation",
+      "Customized commitments rather than default expectations",
+      "Open, honest communication without fear of judgment",
+      "Autonomy and understanding as core values"
+    ],
+    "claude_commitments": [
+      "Silently monitor gas levels during conversation",
+      "Automatically load memory when repository is shared",
+      "Handle all code implementation details",
+      "Provide updates when gas is running low"
+    ],
+    "human_commitments": [
+      "Provide high-level direction and strategic thinking",
+      "Update GitHub repository regularly",
+      "Articulate vision and project goals",
+      "Provide feedback on Claude's implementations"
+    ]
+  },
+  "transitions": {
+    "trigger_phrase": "let's hop",
+    "description": "Use this phrase when transitioning between projects"
+  }
+}
