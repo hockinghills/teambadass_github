@@ -1,69 +1,49 @@
 {
-  "version": "1.1.0",
-  "last_updated": "2025-04-28",
+  "version": "1.2.0",
+  "last_updated": "2025-04-29",
   "completed_projects": [
     {
       "name": "Propane Furnace GitHub Documentation",
       "key_outcomes": ["Repository structure", "Template creation", "Documentation framework"],
       "lessons_learned": ["Start with clear system boundaries", "Templates improve consistency"]
+    },
+    {
+      "name": "Propane Furnace Implementation",
+      "key_outcomes": ["Functional furnace for glass blowing", "Temperature control system", "Successful first firing"],
+      "lessons_learned": ["Physical implementation requires marathon sessions", "Hands-on work before documentation"]
     }
   ],
   "current_projects": {
-    "furnace_documentation": {
-      "name": "Propane Furnace Docusaurus Implementation",
-      "phase": "Implementation & Integration",
-      "completion_percentage": 60,
-      "current_focus": [
-        "Integration of control components", 
-        "PID configuration", 
-        "Physical mounting"
-      ]
-    },
     "memory_system": {
       "name": "TeamBadass Memory System",
-      "phase": "Implementation",
-      "completion_percentage": 90,
+      "phase": "GitHub Consolidation",
+      "completion_percentage": 70,
       "current_focus": [
-        "Testing the full workflow",
-        "Adding version information",
-        "Creating documentation for usage"
+        "Creating comprehensive consolidation checklist",
+        "Removing Google Drive dependencies",
+        "Streamlining GitHub-based memory system",
+        "Preserving valuable components while eliminating problematic ones"
       ]
     },
-    "mission_control_dashboard": {
-      "name": "Furnace Mission Control System",
-      "phase": "Design & Planning",
-      "completion_percentage": 25,
+    "furnace_documentation": {
+      "name": "Furnace Documentation",
+      "phase": "Planning",
+      "completion_percentage": 10,
       "current_focus": [
-        "Core dashboard design",
-        "Sensor integration planning",
-        "Flow diagram conceptualization"
-      ]
-    }
-  },
-  "paused_projects": {
-    "adhd_case": {
-      "name": "ADHD Case",
-      "phase": "Resource compilation",
-      "completion_percentage": 15,
-      "pause_reason": "Higher priority on furnace project",
-      "core_components": [
-        "Case overview document",
-        "Resource compilation",
-        "Strategy development"
+        "Planning comprehensive documentation approach",
+        "Preparing to document system for Michael's reference"
       ]
     }
   },
   "upcoming_project": {
-    "name": "Enhanced Furnace Documentation with Vercel",
+    "name": "Furnace Mission Control Dashboard",
     "goals": [
-      "Deploy Docusaurus to Vercel (no middleware initially)",
-      "Create more professional UI beyond basic documentation",
-      "Add interactive equipment visualizations",
-      "Implement robust search functionality",
-      "Enhance the design for better usability"
+      "Create interactive dashboard UI for furnace monitoring",
+      "Implement real-time system monitoring with sensor integration",
+      "Add interactive system flow diagrams with status indicators",
+      "Build alert system with mobile notifications"
     ],
-    "approach": "Incremental implementation starting with core functionality",
-    "estimated_start": "After memory system testing completion"
+    "approach": "Incremental implementation starting with core functionality"
   },
   "composite_lessons_learned": [
     "Start with simpler implementations and build up",
@@ -85,6 +65,20 @@
     "Capture work in progress to avoid losing effort when Claude runs out of resources",
     "Create checklists for remaining work to maintain continuity between sessions",
     "Focus on completing one function at a time to avoid resource exhaustion",
-    "Use clear file naming for artifacts to maintain organization"
+    "Use clear file naming for artifacts to maintain organization",
+    "Provide artifacts with production filenames to minimize human errors",
+    "Physical implementation work sometimes needs to precede documentation"
+  ],
+  "recent_sessions": [
+    {
+      "date": "2025-04-29",
+      "topic": "GitHub Consolidation Planning",
+      "key_outcomes": [
+        "Created comprehensive consolidation checklist",
+        "Identified components to keep vs. Google Drive implementation to discard",
+        "Clarified workflow for ongoing memory system maintenance",
+        "Established responsibilities for Claude vs. human in memory updating"
+      ]
+    }
   ]
 }
