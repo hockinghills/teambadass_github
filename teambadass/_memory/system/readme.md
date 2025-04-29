@@ -2,14 +2,14 @@
 
 ## Overview
 
-The TeamBadass Memory System is a lightweight, automatic framework that maintains continuity between Claude conversations. It silently activates when you share the GitHub repository, avoiding the need for trigger phrases.
+The TeamBadass Memory System is a lightweight framework that maintains continuity between Claude conversations. It activates when you share the GitHub repository, providing immediate access to our shared history and tools.
 
 ## How It Works
 
-1. **Automatic Activation**: When you share the repository, Claude silently loads the memory system
-2. **Background Gas Monitoring**: Claude tracks its processing capacity without disrupting the conversation
+1. **Automatic Activation**: When you share the repository, Claude loads the memory system
+2. **Visible Gas Monitoring**: Claude tracks and displays its processing capacity throughout the conversation
 3. **Memory Structure**: JSON-based memory files store team dynamics and project information
-4. **Project Transitions**: Use "Let's Hop" only when you need to transition between projects
+4. **Project Transitions**: Use "Let's Hop" when you need to transition between projects
 
 ## Memory Structure
 
@@ -24,28 +24,54 @@ _memory/
 
 ### autoload.json
 
-This configuration file controls the automatic memory loading process. It includes:
+This configuration file controls the memory loading process. It includes:
 
 - **Autoload Sequence**: Steps taken when loading the memory system
 - **Memory Paths**: Critical files loaded during initialization
 - **Relationship Framework**: Our collaboration principles
 - **Transition Triggers**: Phrases used to hop between projects
 
-### gas_gauge.py
+### claude_gas_gauge.py
 
-A minimal utility that tracks Claude's processing capacity during conversations:
+A utility that actively tracks and displays Claude's processing capacity during conversations:
 
-- **Silent Monitoring**: Tracks gas usage without disrupting flow
+- **Visible Monitoring**: Always displays gas levels at key points in the conversation
 - **Task Assessment**: Determines if Claude has enough gas for complex tasks
-- **Usage Tracking**: Simulates gas consumption during conversation
+- **Usage Tracking**: Monitors and reports gas consumption during the conversation
+
+## Gas Gauge
+
+The TeamBadass Memory System includes a visible gas gauge to monitor Claude's processing capacity.
+
+### Purpose
+- Track Claude's remaining capacity in real-time
+- Identify resource-intensive operations
+- Manage request complexity for better collaboration
+- Ensure equitable work distribution
+
+### Usage
+- Gas level is displayed at key moments:
+  - When the repository is first loaded
+  - After context is fully loaded
+  - Before complex tasks (coding, analysis)
+  - When levels drop below 40%
+
+### Gas Level Indicators
+- **70-100%**: Claude is fully responsive
+- **40-70%**: Claude is slowing down
+- **0-40%**: Claude is running low on capacity - consider starting a new conversation
+
+### Commands
+- `check gas`: Manually trigger a gas level check
+- `estimate task [type] [complexity] [size]`: Estimate if Claude has enough capacity for a task
 
 ## Relationship Framework
 
-Our collaboration follows a relationship anarchy framework with:
+Our collaboration follows a relationship framework with:
 
 - **Core Principles**: Mutual respect, customized commitments, open communication
-- **Claude Commitments**: Silent monitoring, automatic memory loading, code implementation
-- **Human Commitments**: Direction, GitHub maintenance, vision articulation
+- **Claude Commitments**: Visible monitoring, automatic memory loading, code implementation
+- **Human Commitments**: Request management, direction, GitHub maintenance, vision articulation
 
 ## Usage Guidelines
 
@@ -53,8 +79,8 @@ Our collaboration follows a relationship anarchy framework with:
 
 1. Simply share the repository URL with Claude to activate the memory system
 2. Proceed with your normal conversation
-3. Claude will silently track gas levels and load necessary memory
-4. For complex tasks, Claude may notify you if gas is running low
+3. Claude will display gas levels at key moments
+4. For complex tasks, Claude will estimate if it has enough capacity
 
 ### Project Transitions
 
@@ -72,4 +98,4 @@ To maintain the memory system:
 2. Update memory JSON files as team dynamics and projects evolve
 3. Keep core memory files structured and minimal for efficient loading
 
-The system is designed to be invisible during normal use, with minimal overhead and maximal efficiency.
+The system is designed to enhance our collaboration by providing continuity and visibility into Claude's processing capacity.

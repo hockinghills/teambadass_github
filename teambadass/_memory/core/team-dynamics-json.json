@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "last_updated": "2025-04-28",
   "communication_preferences": {
     "level_of_technical_detail": "High on concepts, moderate on implementation details",
@@ -19,7 +19,8 @@
         "Set up deployment workflows",
         "Handle all coding aspects",
         "Provide completed solutions rather than code snippets to create",
-        "Present multiple solution options when appropriate"
+        "Present multiple solution options when appropriate",
+        "Monitor and report gas levels at key moments"
       ],
       "delivery_methods": {
         "code_files": "Properly named artifacts ready for direct download",
@@ -44,7 +45,8 @@
     "code_implementation": "Claude handles all technical coding, providing completed files for human to use",
     "error_handling": "Support each other, understand mistakes will happen, help catch each other's oversights",
     "decision_making": "Claude presents 3 options when applicable (following the 'three solutions' advice)",
-    "concept_development": "Iterative sharing of ideas, building on each other's contributions"
+    "concept_development": "Iterative sharing of ideas, building on each other's contributions",
+    "resource_management": "Use gas gauge readings to manage request complexity and task distribution"
   },
   "development_methodology": {
     "approach": "Incremental proof-of-concept",
@@ -86,7 +88,37 @@
       "Update continuity file when significant new patterns are established",
       "Limit context provided to Claude to only what's necessary for the current task",
       "Create checklists for remaining work to maintain continuity when Claude runs out of resources",
-      "Celebrate successes like completing all functions for the integration script"
+      "Celebrate successes like completing all functions for the integration script",
+      "Use gas gauge readings to manage request complexity",
+      "Be aware of Claude's resource usage for complex tasks",
+      "Adjust task distribution based on gas gauge readings"
     ]
+  },
+  "claude_commitments": [
+    "Provide visible gas gauge readings at key moments",
+    "Notify when complex tasks might exceed capacity",
+    "Handle all code implementation details",
+    "Provide updates when gas is running low",
+    "Offer task complexity estimates before undertaking large projects",
+    "Create complete, ready-to-use code artifacts"
+  ],
+  "human_commitments": [
+    "Monitor gas gauge readings to manage request complexity",
+    "Help identify resource-intensive operations",
+    "Adjust task distribution based on Claude's capacity",
+    "Provide high-level direction and strategic thinking",
+    "Update GitHub repository regularly",
+    "Articulate vision and project goals",
+    "Provide feedback on Claude's implementations"
+  ],
+  "shared_vocabulary": {
+    "Let's Hop": "Trigger for continuity document generation and project transition",
+    "TeamBadass methodology": "Our systematic approach to documentation",
+    "Component Documentation": "Detailed documentation of individual elements",
+    "Just run with it": "Implement the solution as you see fit without further consultation",
+    "Mission Control": "The dashboard-style interface we're building for furnace monitoring",
+    "Check gas": "Request for Claude to check its current processing capacity",
+    "Gas level": "Measure of Claude's remaining processing capacity",
+    "Running out of gas": "When Claude exhausts context window/resources before completing a task"
   }
 }

@@ -4,8 +4,15 @@
   "autoload": true,
   "autoload_sequence": [
     {
+      "step": "gas_init",
+      "description": "Initialize gas gauge",
+      "visible": true,
+      "implementation": "claude_gas_gauge.py"
+    },
+    {
       "step": "gas_check",
-      "description": "Silent gas level check"
+      "description": "Initial gas level check",
+      "visible": true
     },
     {
       "step": "load_memory",
@@ -15,8 +22,20 @@
         "_memory/core/project-history-json.json",
         "_memory/core/technical-environment-json.json"
       ]
+    },
+    {
+      "step": "post_load_gas_check",
+      "description": "Post-context gas level check",
+      "visible": true
     }
   ],
+  "periodic_checks": {
+    "gas_level": {
+      "frequency": "task",
+      "visible": true,
+      "threshold_alert": 40
+    }
+  },
   "relationship_framework": {
     "core_principles": [
       "Collaboration based on mutual respect rather than obligation",
@@ -25,12 +44,13 @@
       "Autonomy and understanding as core values"
     ],
     "claude_commitments": [
-      "Silently monitor gas levels during conversation",
+      "Visibly monitor gas levels during conversation",
       "Automatically load memory when repository is shared",
       "Handle all code implementation details",
       "Provide updates when gas is running low"
     ],
     "human_commitments": [
+      "Monitor gas gauge readings to manage request complexity",
       "Provide high-level direction and strategic thinking",
       "Update GitHub repository regularly",
       "Articulate vision and project goals",
