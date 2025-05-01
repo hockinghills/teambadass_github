@@ -1,7 +1,19 @@
 #!/usr/bin/env python3
 """
-Claude Gas Gauge - Core Functionality (Phase 1)
-A lightweight utility to measure Claude's processing capacity
+FILE_OVERVIEW: gas_gauge_core.py - Core gas measurement functionality
+VERSION: 1.0.0
+LAST_UPDATED: 2025-05-01
+DEPENDENCIES: None
+IMPORTED_BY: gauge_reporting.py, gauge_metrics.py
+
+TABLE_OF_CONTENTS:
+1. ClaudeGasGauge Class - Main gas gauge implementation
+2. Response Time Measurement - "Ping" concept implementation
+3. Gas Level Calculation - Usage estimation based on response time
+4. Checkpoint System - Predefined gas level checkpoints
+5. Task Estimation - Calculate gas required for planned operations
+
+SKIP_DETAILED_ANALYSIS: True - This header provides sufficient context
 """
 
 import time
