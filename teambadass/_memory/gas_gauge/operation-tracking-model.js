@@ -1,6 +1,18 @@
 /**
- * TeamBadass Operation-Based Tracking Model
- * Enhanced version based on observable metrics
+ * FILE_OVERVIEW: operation-tracking-model.js - Enhanced operation-based gas tracking
+ * VERSION: 1.0.0
+ * LAST_UPDATED: 2025-05-01
+ * DEPENDENCIES: None
+ * IMPORTED_BY: gauge_metrics.js, dashboard.jsx
+ *
+ * TABLE_OF_CONTENTS:
+ * 1. Operation Types - Definitions and base costs for different operations
+ * 2. Cost Calculators - Functions to estimate gas usage by operation type
+ * 3. Estimation Engine - Pre-task assessment and decision support
+ * 4. Session Registry - Track operations and cumulative usage
+ * 5. Visualization Helpers - Generate ASCII gauge and status indicators
+ *
+ * SKIP_DETAILED_ANALYSIS: True - This header provides sufficient context
  */
 
 // Operation Types and their base costs
