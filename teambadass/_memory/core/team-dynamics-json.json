@@ -1,4 +1,22 @@
 {
+  "/**": "FILE_OVERVIEW: team-dynamics-json.json - Team roles and communication patterns",
+  "VERSION": "1.2.0",
+  "LAST_UPDATED": "2025-04-28",
+  "DEPENDENCIES": "None",
+  "IMPORTED_BY": "init.py, auto_init.py",
+  
+  "TABLE_OF_CONTENTS": [
+    "1. Communication Preferences - Technical detail, explanation, feedback style",
+    "2. Role Definition - Team member responsibilities and capabilities",
+    "3. Collaboration Patterns - Working methods and interaction approach",
+    "4. Development Methodology - Incremental proof-of-concept approach",
+    "5. Communication Flow - Standard progression of interactions"
+  ],
+  
+  "SKIP_DETAILED_ANALYSIS": "True - This header provides sufficient context",
+  
+  "/* ACTUAL FILE CONTENT BELOW */": "",
+
   "version": "1.2.0",
   "last_updated": "2025-04-28",
   "communication_preferences": {
