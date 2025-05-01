@@ -1,0 +1,129 @@
+{
+  "version": "1.0.0",
+  "session_id": "2025-05-01-gas-gauge-implementation",
+  "timestamp": "2025-05-01T14:30:00Z",
+  "operations": [
+    {
+      "type": "context_loading",
+      "details": "80KB repository",
+      "usage": 10.0,
+      "cumulative": 10.0,
+      "timestamp": "2025-05-01T14:05:00Z"
+    },
+    {
+      "type": "discussion_exchange",
+      "details": "Initial greeting, ~100 words",
+      "usage": 5.5,
+      "cumulative": 15.5,
+      "timestamp": "2025-05-01T14:10:00Z"
+    },
+    {
+      "type": "search_operation",
+      "details": "Searched for previous session info",
+      "usage": 4.0,
+      "cumulative": 19.5,
+      "timestamp": "2025-05-01T14:15:00Z"
+    },
+    {
+      "type": "discussion_exchange",
+      "details": "Follow-up discussion, ~150 words",
+      "usage": 6.0,
+      "cumulative": 25.5,
+      "timestamp": "2025-05-01T14:20:00Z"
+    },
+    {
+      "type": "artifact_creation",
+      "details": "Dashboard artifact creation",
+      "usage": 5.0,
+      "cumulative": 30.5,
+      "timestamp": "2025-05-01T14:22:00Z"
+    },
+    {
+      "type": "artifact_creation",
+      "details": "Operation tracking model implementation",
+      "usage": 15.0,
+      "cumulative": 45.5,
+      "timestamp": "2025-05-01T14:25:00Z"
+    },
+    {
+      "type": "discussion_exchange",
+      "details": "Discussion about gas usage discrepancy",
+      "usage": 3.0,
+      "cumulative": 48.5,
+      "timestamp": "2025-05-01T14:28:00Z"
+    },
+    {
+      "type": "artifact_creation",
+      "details": "Session summary artifact",
+      "usage": 5.0,
+      "cumulative": 53.5,
+      "timestamp": "2025-05-01T14:29:00Z"
+    },
+    {
+      "type": "discussion_exchange",
+      "details": "Discussion about metrics structure",
+      "usage": 4.0,
+      "cumulative": 57.5,
+      "timestamp": "2025-05-01T14:30:00Z"
+    }
+  ],
+  "operations_by_type": {
+    "context_loading": {
+      "count": 1,
+      "total_usage": 10.0
+    },
+    "discussion_exchange": {
+      "count": 4,
+      "total_usage": 18.5
+    },
+    "search_operation": {
+      "count": 1,
+      "total_usage": 4.0
+    },
+    "artifact_creation": {
+      "count": 3,
+      "total_usage": 25.0
+    },
+    "code_generation": {
+      "count": 0,
+      "total_usage": 0.0
+    },
+    "keystone_creation": {
+      "count": 0,
+      "total_usage": 0.0
+    },
+    "planning": {
+      "count": 0,
+      "total_usage": 0.0
+    }
+  },
+  "pauses": [],
+  "thresholds": {
+    "warning": 57.5,
+    "hard_stop": 90.0
+  },
+  "final_status": {
+    "usage": 57.5,
+    "status": "WARNING",
+    "remaining": 0,
+    "usage_percentage_of_warning": 100.0,
+    "timestamp": "2025-05-01T14:31:00Z"
+  },
+  "warnings_observed": {
+    "long_chats_warning": {
+      "occurred": true,
+      "timestamp": "2025-05-01T14:30:30Z",
+      "usage_at_warning": 57.5,
+      "operations_completed": 8
+    },
+    "hard_stop": {
+      "occurred": false,
+      "timestamp": null,
+      "usage_at_stop": null
+    }
+  },
+  "session_metadata": {
+    "connectivity_issues": true,
+    "notes": "Session experienced satellite internet connectivity issues. Never reached long chats warning message due to early hop decision."
+  }
+}
