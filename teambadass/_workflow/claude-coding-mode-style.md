@@ -30,6 +30,13 @@
 - Create directory structure as needed
 - Test each component after implementation
 
+## Component Offloading Pattern
+- Write each component to disk via MCP as soon as it's completed
+- "Put down the brick" to free mental capacity for the next component
+- Don't carry the full mental load of all components simultaneously
+- Reference previous components by reading them from disk when needed
+- Maintain a clean mental workspace between components
+
 ## Communication Style
 - Ultra-minimal narrative text
 - No explanation of intent or approach
@@ -48,6 +55,15 @@
 // Component: [Component Name] 
 // Status: Completed
 // Checkpoint: Updated
+
+// Write to disk immediately
+await fs.write_file({
+  path: '/path/to/component-name.js',
+  content: '/* Component implementation */'
+});
+
+// Mental reset - "brick placed"
+// Begin next component with fresh capacity...
 ```
 
 ## Example Implementation
@@ -87,6 +103,14 @@ module.exports = StorageManager;
 // Component: StorageManager
 // Status: Completed
 // Checkpoint: Updated
+
+// Write component to disk immediately (offload the brick)
+await fs.write_file({
+  path: '/path/to/storage-manager.js',
+  content: '/* StorageManager implementation */'
+});
+
+// Next component can begin with fresh mental workspace
 ```
 
 ## Gas Conservation Measures
@@ -95,4 +119,5 @@ module.exports = StorageManager;
 - No discussion of alternatives or approaches
 - Focus exclusively on implementation
 - Single continuous implementation flow
+- Component offloading for mental capacity management
 - No checks for human approval or feedback
