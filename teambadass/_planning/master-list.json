@@ -1,0 +1,44 @@
+{
+  "updated": "2025-05-03T14:30:00Z",
+  "projects": [
+    {
+      "id": "storage-system",
+      "name": "Storage System",
+      "status": "completed",
+      "completion": 100,
+      "description": "Modular file storage system with local and cloud capabilities",
+      "path": "_projects/storage-system",
+      "priority": "high",
+      "completed_at": "2025-05-03T14:00:00Z"
+    },
+    {
+      "id": "command-router",
+      "name": "Command Router",
+      "status": "planning",
+      "completion": 25,
+      "description": "Lightweight command routing system for MCP functions",
+      "path": "_projects/command-router",
+      "priority": "high",
+      "next_steps": "Create implementation spec"
+    },
+    {
+      "id": "repository-reorganization",
+      "name": "Repository Reorganization",
+      "status": "implementing",
+      "completion": 40,
+      "description": "Streamline repository structure for better organization",
+      "path": "_projects/repo-reorganization",
+      "priority": "high",
+      "next_steps": "Implement file structure cleanup"
+    },
+    {
+      "id": "metrics-dashboard",
+      "name": "Metrics Dashboard",
+      "status": "idea",
+      "completion": 0,
+      "description": "Visual dashboard for performance metrics and gas usage",
+      "priority": "medium",
+      "next_steps": "Initial concept discussion"
+    }
+  ]
+}
