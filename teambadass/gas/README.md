@@ -2,40 +2,33 @@
 
 Ultra-efficient session capacity tracking with background operation mode.
 
-## Core Metrics
-- Implementation cost: ~10% session
-- Ongoing overhead: <0.5% per session
-- Savings: ~29% per session vs dashboard approach
-- Break-even: 1 session
-- 5-session ROI: +145% capacity gain
+## Key Metrics
+- Implementation cost: ~5% session capacity
+- Ongoing overhead: <0.5% per operation
+- Savings: ~25% compared to previous implementations
+- Break-even: Immediate (first session)
 
-## Key Features
+## Core Features
 - Silent background operation
-- Threshold-only surfacing
-- Consolidated metrics in single JSON
-- Automated threshold adaptation
-- Outlier detection
-
-## Installation
-Place `minimal_tracker.py` in:
-```
-teambadass/gas/minimal_tracker.py
-```
+- Threshold-based notifications
+- Consolidated metrics storage
+- Operation cost estimation
+- Adaptive thresholds
 
 ## Usage Patterns
 
 ### Silent Initialization
 ```python
 # Create instance
-tracker = MinimalTracker()
+tracker = MinimalTracker(silent=True)
 
 # Initialize with context size (outputs nothing)
 tracker.init_session(kb=80)
 ```
 
-### Operation Registration (Silent)
+### Operation Registration
 ```python
-# Register operations (silent unless threshold)
+# Register operations silently
 result = tracker.register("code", complexity="high", size="large")
 if result:  # Only outputs at thresholds
     print(result)
@@ -61,7 +54,7 @@ print(f"{status['usage']}% used, {status['remaining']}% left")
 ```python
 # Prepare for hop and save metrics
 hop = tracker.prepare_hop()
-print(f"Session: {hop['usage']}% across {len(hop['ops'])} operations")
+print(f"Session: {hop['usage']}% across {hop['duration_mins']} minutes")
 ```
 
 ## Operation Types & Parameters
@@ -74,34 +67,3 @@ print(f"Session: {hop['usage']}% across {len(hop['ops'])} operations")
 | search | result count | - | `register("search", complexity=8)` |
 | artifact | low/med/high | small/med/large | `register("artifact", "med", "large")` |
 | plan | low/med/high | - | `register("plan", "high")` |
-
-## Integration
-Add to `init.py`:
-
-```python
-from teambadass.gas.minimal_tracker import MinimalTracker
-
-# Create tracker in background
-tracker = MinimalTracker()
-tracker.init_session(kb=80)  # Register context size
-
-# Register operations silently
-def register_operation(op_type, **kwargs):
-    result = tracker.register(op_type, **kwargs)
-    if result:
-        print(result)  # Only surface at thresholds
-```
-
-## Metrics Storage
-Metrics are stored in `capacity_metrics.json` with:
-- Last 10 sessions history
-- Operation cost averages
-- Threshold observations
-- Significant outliers
-
-## Advantages vs Dashboard
-- <0.5% overhead vs ~30% for dashboard
-- No visual code overhead
-- Adapts based on actual observations
-- Minimal impact on conversation
-- Zero mention of gas/capacity unless needed
