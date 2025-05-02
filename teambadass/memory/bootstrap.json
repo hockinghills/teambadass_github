@@ -1,0 +1,10 @@
+{
+  "sessionId": "2025-05-02-mcp-foundation",
+  "repository": "/home/louthenw/Documents/teambadass_github/teambadass",
+  "sessionSummary": "/memory/session-summary-2025-05-02.md",
+  "keyFiles": [
+    "/utils/fs-helper.js",
+    "/memory/gas-tracker.js"
+  ],
+  "nextFocus": "Implement auto-init using existing components in /teambadass/gas/auto_init.py and /teambadass/memory/init.py"
+}
