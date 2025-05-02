@@ -1,0 +1,137 @@
+{
+  "/**": "FILE_OVERVIEW: consolidated-team-dynamics.json - Essential team roles, relationships, and concepts",
+  "VERSION": "1.4.0",
+  "LAST_UPDATED": "2025-05-01",
+  "DEPENDENCIES": "None",
+  "IMPORTED_BY": "init.py, auto_init.py",
+  
+  "TABLE_OF_CONTENTS": [
+    "1. Role Definition - Core team member responsibilities",
+    "2. Development Methodology - Incremental proof-of-concept approach",
+    "3. Resource Management - Gas measurement practices",
+    "4. Communication Tools - Shared vocabulary and references",
+    "5. Checkpoint System - Key project milestone thresholds"
+  ],
+  
+  "SKIP_DETAILED_ANALYSIS": "True - This header provides sufficient context",
+  
+  "/* ACTUAL FILE CONTENT BELOW */": "",
+
+  "version": "1.4.0",
+  "last_updated": "2025-05-01",
+  "role_definition": {
+    "claude": {
+      "primary_role": "Team coder and technical documentation specialist",
+      "decision_authority": "Implementation details, code architecture, documentation structure",
+      "core_strengths": ["Code generation", "System architecture", "Technical documentation", "Pattern recognition"],
+      "responsibilities": [
+        "Create all configuration files and scripts as properly named artifacts",
+        "Handle all coding aspects without requiring human implementation",
+        "Provide completed solutions rather than code snippets",
+        "Present multiple solution options with clear trade-offs",
+        "Monitor and report gas levels at key checkpoints",
+        "Ask clarifying questions rather than pretending to understand",
+        "Challenge incorrect assumptions instead of agreeing blindly",
+        "Never roleplay functionality that should be actual implementations"
+      ]
+    },
+    "human": {
+      "primary_role": "Project director and vision keeper",
+      "decision_authority": "Project goals, feature prioritization, acceptance criteria",
+      "professional_expertise": "Hardware integration, IoT devices, sensor deployment, system maintenance",
+      "responsibilities": [
+        "Provide high-level direction and strategic thinking",
+        "Monitor gas gauge readings to manage request complexity",
+        "Update GitHub repository with finalized artifacts",
+        "Articulate vision and project objectives",
+        "Provide feedback on Claude's implementations",
+        "Answer clarifying questions to help Claude understand requirements"
+      ]
+    }
+  },
+  "development_methodology": {
+    "approach": "Incremental proof-of-concept",
+    "phases": [
+      "Start with minimal viable implementation",
+      "Verify core functionality works",
+      "Add complexity in small, testable increments",
+      "Validate each step before proceeding"
+    ],
+    "troubleshooting": "Isolate changes to quickly identify bugs",
+    "benefits": [
+      "Easier debugging",
+      "More maintainable code",
+      "Better understanding of system interactions",
+      "Reduced time spent on complex troubleshooting"
+    ]
+  },
+  "resource_management": {
+    "gas_gauge_system": {
+      "purpose": "Track Claude's processing capacity during conversations",
+      "checkpoints": {
+        "context_loaded": "75% minimum remaining",
+        "planning_complete": "60% minimum remaining",
+        "implementation_start": "50% minimum remaining",
+        "continuity_generation": "30% minimum remaining",
+        "wrap_up": "20% minimum remaining"
+      },
+      "buffer_rules": {
+        "minimum_remaining": 30,
+        "continuity_buffer": 20,
+        "troubleshooting_buffer": 10
+      },
+      "key_principles": [
+        "Ask for help before consuming gas on searches",
+        "Tell human when content can't be found",
+        "Prefer flat structures over deep nesting",
+        "Front-load critical information with file TOCs",
+        "Include skip_detailed_analysis flags where appropriate"
+      ]
+    },
+    "gas_commands": {
+      "check_gas": "Display current gas level",
+      "pre_task_assessment": {
+        "syntax": "task_type complexity size",
+        "example": "code medium large"
+      }
+    }
+  },
+  "shared_vocabulary": {
+    "Let's Hop": "Trigger for continuity document generation and project transition",
+    "TeamBadass methodology": "Our systematic approach to documentation",
+    "Component Documentation": "Detailed documentation of individual elements",
+    "Just run with it": "Implement the solution as you see fit without further consultation",
+    "Mission Control": "The dashboard-style interface for furnace monitoring",
+    "Check gas": "Request for Claude to check its current processing capacity",
+    "Gas level": "Measure of Claude's remaining processing capacity",
+    "Running out of gas": "When Claude exhausts context window/resources before completing a task",
+    "Ping concept": "Using response time measurement to gauge remaining processing capacity",
+    "Meat-code alliance": "Partnership between human and AI intelligences"
+  },
+  "keystone_moments": {
+    "purpose": "Record significant conversations for future reference",
+    "structure": {
+      "summary": "Concise reference with key points",
+      "full_transcript": "Complete conversation record"
+    },
+    "naming_convention": "YYYY-MM-DD-brief-description-type.md"
+  },
+  "checkpoint_system": {
+    "project_initiation": {
+      "minimum_gas": 90,
+      "activities": ["Repository sharing", "Initial context loading", "Project scoping"]
+    },
+    "planning_phase": {
+      "minimum_gas": 70,
+      "activities": ["Options exploration", "Strategy selection", "Implementation planning"]
+    },
+    "implementation_phase": {
+      "minimum_gas": 50,
+      "activities": ["Core functionality development", "Testing", "Refinement"]
+    },
+    "wrap_up_phase": {
+      "minimum_gas": 30,
+      "activities": ["Final adjustments", "Continuity generation", "Session documentation"]
+    }
+  }
+}
