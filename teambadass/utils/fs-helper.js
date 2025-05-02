@@ -178,4 +178,25 @@ const fsHelper = {
   }
 };
 
+  /**
+   * Generate standardized timestamped filename
+   * @param {string} prefix - Filename prefix
+   * @param {string} extension - File extension (with or without dot)
+   * @param {Date} date - Date to use (defaults to now)
+   * @returns {string} Filename with YYYY-MM-DD-HHMM timestamp
+   */
+  createTimestampedFilename(prefix = '', extension = '.json', date = null) {
+    const now = date || new Date();
+    
+    // Format: YYYY-MM-DD-HHMM
+    const timestamp = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}-${String(now.getHours()).padStart(2, '0')}${String(now.getMinutes()).padStart(2, '0')}`;
+    
+    // Ensure extension has a dot
+    const ext = extension.startsWith('.') ? extension : `.${extension}`;
+    
+    // Create filename
+    return `${prefix}${prefix ? '-' : ''}${timestamp}${ext}`;
+  }
+};
+
 module.exports = fsHelper;

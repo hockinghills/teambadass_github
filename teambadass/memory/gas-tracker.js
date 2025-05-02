@@ -199,10 +199,9 @@ const gasTracker = {
         operationCounts: this.getOperationCounts()
       };
       
-      // Create metrics filename with timestamp
-      const timestamp = new Date().toISOString()
-        .replace(/:/g, '-')
-        .replace(/\..+/, '');
+      // Create metrics filename with timestamp in YYYY-MM-DD-HHMM format
+      const now = new Date();
+      const timestamp = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}-${String(now.getHours()).padStart(2, '0')}${String(now.getMinutes()).padStart(2, '0')}`;
       const metricsFile = `${METRICS_PATH}/gas-${this.state.sessionId}-${timestamp}.json`;
       
       // Save metrics
