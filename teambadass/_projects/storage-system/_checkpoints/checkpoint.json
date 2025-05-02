@@ -1,0 +1,12 @@
+{
+  "project": "StorageSystem",
+  "updated": "2025-05-03T09:00:00.000Z",
+  "completed": [],
+  "pending": [
+    "StorageManager",
+    "LocalAdapter",
+    "MetadataTracker",
+    "CloudAdapter"
+  ],
+  "next": "StorageManager"
+}
