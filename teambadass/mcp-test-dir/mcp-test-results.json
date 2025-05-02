@@ -1,0 +1,16 @@
+{
+  "testSuite": "MCP Filesystem Functions",
+  "timestamp": "2025-05-02T14:30:00Z",
+  "results": [
+    {"name": "list_allowed_directories", "status": "PASS"},
+    {"name": "read_file", "status": "PASS"},
+    {"name": "read_multiple_files", "status": "PASS"},
+    {"name": "list_directory", "status": "PASS"},
+    {"name": "directory_tree", "status": "PASS"},
+    {"name": "search_files", "status": "PASS"},
+    {"name": "get_file_info", "status": "PASS"},
+    {"name": "create_directory", "status": "PASS"},
+    {"name": "write_file", "status": "PASS"},
+    {"name": "edit_file", "status": "PENDING"}
+  ]
+}
