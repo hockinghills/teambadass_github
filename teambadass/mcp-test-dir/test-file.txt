@@ -1,5 +1,0 @@
-This is a test file created by Claude using MCP function write_file.
-Testing write capabilities on: May 2, 2025
-File contains test content to verify MCP filesystem operations.
-
-This line was added using the edit_file function!
